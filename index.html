@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账务</title>
+</head>
+
+<body style="font-family: 微软雅黑; font-size: 14px;box-sizing: border-box;">
+<div id="accounting" style="width: 1000px; background: #efefef; margin: 0 auto; padding: 20px;">
+    <div class="accounting-head" style="overflow: hidden;">
+        <div class="accounting-user col-lg-4" style="width: 33.33333333%; float: left;">
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;">客户名称</span>:<span style="display: inline-block; padding: 4px;">CUSTOMER_NAME</span></div>
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;">客户编号</span>:<span style="display: inline-block; padding: 4px;">CUSTOMER_ID</span></div>
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;">用电地址</span>:<span style="display: inline-block; padding: 4px;">CUSTOMER_ADDRESS</span></div>
+        </div>
+        <div class="accounting-title col-lg-4" style="color: #926008; text-align: center; font-size: 30px; font-weight: 900;width: 33.33333333%; float: left;">XXXX公司</div>
+        <div class="accounting-number col-lg-4" style="overflow: hidden;width: 33.33333333%; float: left;">
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;">应收流水号</span>:<span style="display: inline-block; padding: 4px;">RECEIVED_SERIAL_NO</span></div>
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;">业务流水号</span>:<span style="display: inline-block; padding: 4px;">BUSINESS_SERIAL_NO</span></div>
+            <div><span style="display: inline-block; padding: 4px;color: #ca8915;color: #298f09;" class="green">计量点编号</span>:<span style="display: inline-block; padding: 4px;color: #e4393c;" class="red">MEASUREMENT_ID</span></div>
+        </div>
+    </div>
+    <div class="accounting-table" style="margin-top: 20px;">
+        <table class="table table-bordered" style="color: #000; border-collapse: collapse; width: 100%;">
+            <thead>
+            <tr>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;"></th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">峰</th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">谷</th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">平</th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">容量</th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">需量</th>
+                <th style="padding: 8px;border: 1px solid #ca8915;text-align: center; color: #ca8915;">总计</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="text-align: center;">
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;color: #ca8915;">电量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">峰电量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">平电量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">谷电量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">容量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">需量</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">总电量</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;color: #ca8915;">电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">峰电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">平电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">谷电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">容量电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">需量电价</td>
+                <td style="padding: 8px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">总电价</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;color: #ca8915;">电费</td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">峰电费</td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">平电费</td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">谷电费</td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;"></td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;"></td>
+                <td style="padding: 8px;padding-bottom: 100px;border: 1px solid #ca8915; border-left: 1px solid #ca8915;">总电费</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">电费月份</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">ELEC_FEE_MONTHLY</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">违约金起算日期</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">PENALTY_START_DATE</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">用电类别</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;" colspan="2">ELEC_USAGE_TYPE</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">差错性退补电费</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">ERROR_RET_ELEC_FEE</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">政策性退补电费</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">POLICY_RET_ELEC_FEE</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">基金及附加</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;" colspan="2">FUND_ADDL_ELEC_FEE</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">基本电费</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">FUND_ELEC_FEE</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">功率因数调整电费</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;">FACTOR_TUNING_ELEC_FEE</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;color: #ca8915; text-align: right;">基金及附加</td>
+                <td style="padding: 8px;border: 1px solid #ca8915;" colspan="2">FUND_ADDL_ELEC_FEE</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="accounting-footer" style="overflow: hidden;">
+        <div class="col-lg-4" style="width: 33.33333333%; float: left;">
+            <span style="display: inline-block; padding: 4px;color: #ca8915;">发行人</span>:<span style="display: inline-block; padding: 4px;">ISSUER</span>
+        </div>
+        <div class="col-lg-4" style="width: 33.33333333%; float: left;">
+            <span style="display: inline-block; padding: 4px;color: #ca8915;">发行日期</span>:<span style="display: inline-block; padding: 4px;">ISSUE_DATE</span>
+        </div>
+        <div class="col-lg-4" style="width: 33.33333333%; float: left;">
+            <span style="display: inline-block; padding: 4px;color: #ca8915;">账务月份</span>:<span style="display: inline-block; padding: 4px;">BILL_MONTHLY_DATE</span>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
